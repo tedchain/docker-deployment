@@ -1,0 +1,8 @@
+tedchain:
+  build: tedchain/.
+  ports:
+    - "8080:8080"
+  container_name: tedchain-server
+  volumes:
+    - ./data:/tedchain/data
+  restart: always

@@ -1,0 +1,16 @@
+web:
+  build: nginx/.
+  container_name: nginx
+  ports:
+    - "80:80"
+  links:
+    - "tedchain"
+  restart: always
+
+tedchain:
+  build: tedchain/.
+  ports:
+    - "8080"
+  volumes:
+    - ./data:/tedchain/data
+  restart: always
