@@ -6,7 +6,7 @@
     "path": "ledger.db"
   },
 
-  // Define transaction validation parameters
+  // Define transaction validation parameters.
   "validator_mode": {
     // Required: A random string used to generate the chain namespace
     "instance_seed": "",
